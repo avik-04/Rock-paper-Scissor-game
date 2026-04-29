@@ -16,7 +16,7 @@ def determine_winner(user, computer):
         return "computer"
 
 def play_game():
-    # Initialize scores
+    
     user_score = 0
     computer_score = 0
     draw_score=0
@@ -48,7 +48,7 @@ def play_game():
             comp_pick = get_computer_pick()
             print(f"Computer chose: {comp_pick}")
             
-            # Get result and update score
+        
             result = determine_winner(user_pick, comp_pick)
             
             if result == "user":
